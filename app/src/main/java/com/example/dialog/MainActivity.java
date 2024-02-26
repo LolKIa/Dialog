@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(R.string.message);
-        final CharSequence[] items = {getText(R.string.red), getText(R.string.green), getText(R.string.yellow)};
+        final CharSequence[] items = {getText(R.string.red), getText(R.string.green), getText(R.string.yellow), getText(R.string.blue)};
 
         builder.setItems(items, new DialogInterface.OnClickListener() {
             @Override
@@ -51,6 +51,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     case 2:
                         constraintLayout.setBackgroundResource(R.color.yellowColor);
                         Toast.makeText(context, R.string.yellow, Toast.LENGTH_LONG).show();
+                        break;
+                    case 3:
+                        constraintLayout.setBackgroundResource(R.color.blueColor);
+                        Toast.makeText(context, R.string.blue, Toast.LENGTH_LONG).show();
                         break;
                 }
             }

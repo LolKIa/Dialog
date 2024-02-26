@@ -5,7 +5,9 @@
     <color name="redColor">#FF0000</color>
     <color name="yellowColor">#FFFF00</color>
     <color name="greenColor">#00FF00</color>
+    <color name="blueColor">#03A9F4</color>
     <string name="red">Красный</string>
     <string name="yellow">Жёлтый</string>
     <string name="green">Зелёный</string>
+    <string name="blue">Синий</string>
 </resources>
